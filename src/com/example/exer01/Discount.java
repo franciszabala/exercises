@@ -1,4 +1,4 @@
-package discount;
+package com.example.exer01;
 
 
 import java.util.Scanner;
