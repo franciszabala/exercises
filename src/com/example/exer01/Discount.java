@@ -1,10 +1,11 @@
-package discount;
+package com.example.exer01;
 
 
 import java.util.Scanner;
 class Discount{
 	public static void main(String []args){
 			double amount, discount, discountedprice;
+			
 			Scanner input = new Scanner (System.in);
 			System.out.println("Original Price: ");
 			amount = input.nextDouble();
@@ -13,6 +14,8 @@ class Discount{
 			discountedprice = (amount)*(discount*0.01);
 			System.out.println("Discounted price is  " + discountedprice);
 			
+			/** Added this line to avoid leak **/
+			input.close();
 			
 		
 		}	
