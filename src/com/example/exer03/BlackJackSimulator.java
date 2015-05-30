@@ -1,16 +1,20 @@
+package com.example.exer03;
 import java.util.Scanner;
+import java.util.Random;
 
-public class BlackJackSimulator02 {
+import java.util.Scanner;
+import java.util.Random;
+public class BlackJackSimulator {
 
 	public static void main (String []args){
 		Scanner playAns = new Scanner (System.in);
 		int [] deck ={1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,8,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10};
 		 	int Ace = 11;
 		  	int oneDeck = deck.length;
-		 	
+		
 		 	System.out.println ("you have 500 worth of chips. Place your bet: ");
 		 	playAns.nextInt();
-		
+		 			 	
 		 	int card1 = (int) (Math.random() * oneDeck);
 		 	int card2 = (int) (Math.random()* oneDeck);
 		 	int card3 = (int) (Math.random ()* oneDeck);
@@ -126,4 +130,9 @@ public class BlackJackSimulator02 {
 			
 }
 		 }
-		 
+		
+		
+		
+	
+
+
