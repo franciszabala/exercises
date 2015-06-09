@@ -1,3 +1,5 @@
+package com.example.exer04;
+
 import java.util.Scanner;
 
 public class BlackJackSimulator02 {

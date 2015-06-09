@@ -1,4 +1,4 @@
-package com.example.exer03;
+package com.example.exer02;
 
 public class MultiplicationTable03 {
 

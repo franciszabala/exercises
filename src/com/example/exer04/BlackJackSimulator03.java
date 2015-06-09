@@ -3,7 +3,7 @@ package com.example.exer04;
 import java.util.Scanner;
 import java.util.Random;
 
-public class BlackJackSimulator {
+public class BlackJackSimulator03 {
 	
 	public static void main (String [] args){
 			
@@ -17,6 +17,7 @@ public class BlackJackSimulator {
 			int card1, card2,card3, card4, card5, card6;
 			
 			for (int i = 0; i<1; i++){
+				/** why not array instead? **/
 				card1=1+rnd.nextInt(11);
 				card2=1+rnd.nextInt(11);
 				card3=1+rnd.nextInt(11);
@@ -127,4 +128,3 @@ public class BlackJackSimulator {
 			
 		}
 	}
-

@@ -1,3 +1,5 @@
+package com.example.exer02;
+
 
 public class MultiplicationTable02 {
 		
