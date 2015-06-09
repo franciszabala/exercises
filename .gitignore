@@ -58,3 +58,11 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 /bin/
+
+.settings/
+.loadpath
+
+# Eclipse Core
+.project
+*.gitignore~
+.classpath
