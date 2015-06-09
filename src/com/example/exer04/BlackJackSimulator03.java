@@ -16,8 +16,11 @@ public class BlackJackSimulator03 {
 			Random rnd= new Random();
 			int card1, card2,card3, card4, card5, card6;
 			
+			/** what's the point using a loop if you are going to loop once? **/
 			for (int i = 0; i<1; i++){
 				/** why not array instead? **/
+				/** a player can have a maximum of 5 cards **/
+				
 				card1=1+rnd.nextInt(11);
 				card2=1+rnd.nextInt(11);
 				card3=1+rnd.nextInt(11);
@@ -39,7 +42,7 @@ public class BlackJackSimulator03 {
 			else if (playerCard < 16)
 			System.out.println("hit "+ card5+ " player card total: " +playerCardHit);
 			
-			
+			/** this will break in case you add another card **/
 			if (playerCardHit>dealerCard && playerCardHit < 21|| playerCardHit >dealerCardHit && playerCardHit < 21)
 			System.out.println ("you win");
 			else if (playerCard>dealerCard && playerCard < 21|| playerCard >dealerCardHit && playerCardHit < 21)
@@ -73,14 +76,18 @@ public class BlackJackSimulator03 {
 			
 			
 			int newTotal = 0;
+			/** looping once? you can achieve the same result without looping**/
 			for(int j =0; j< 1;  j++){
 			newTotal+=(bet);
 			
 			}
 			int newTotal2 = 0;
+			/** looping once? you can achieve the same result without looping **/
 			for(int k = 0; k < 2; k++){
 			newTotal2+=(bet);
 			}
+			
+			
 			if (playerCard > dealerCard && playerCard < 22)
 				System.out.println("your money: "+ (newTotal+ 500)+ " and "+ "dealer's money: " + ((bet- newTotal2) + 500));
 			else if (playerCard > dealerCardHit && playerCard < 22) 
