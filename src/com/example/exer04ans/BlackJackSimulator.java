@@ -1,7 +1,7 @@
 package com.example.exer04ans;
 
 import java.util.Random;
-
+/** check this first **/
 public class BlackJackSimulator {
 	public static void main (String args[]) {
 		/** a user can only have 5 cards **/
